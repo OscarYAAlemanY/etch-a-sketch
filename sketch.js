@@ -1,11 +1,8 @@
-const numCuadros = parseInt(prompt("¿selecciona entre 0 y 100 cuadros"));
+const numCuadros = parseInt(prompt("¿selecciona entre 0 y 529 cuadros"));
 const contenedor = document.getElementById("container");
 
-const columnas = Math.ceil(Math.sqrt(numCuadros));
-const filas = Math.ceil(numCuadros / columnas);
 
-const anchoPorcentaje = 100 / columnas;
-const altoPorcentaje = 100 / filas;
+
 
 const cuadros = [];
 
@@ -13,8 +10,8 @@ const cuadros = [];
 for (let i = 0; i < numCuadros; i++) {
   const cuadro = document.createElement("div");
   cuadro.classList.add("cuadro");
-  cuadro.style.width = `${anchoPorcentaje}%`;
-  cuadro.style.height = `${altoPorcentaje}%`;
+  cuadro.style.width = "auto";
+  cuadro.style.height = "auto";
   contenedor.appendChild(cuadro);
   cuadros.push(cuadro);
 }

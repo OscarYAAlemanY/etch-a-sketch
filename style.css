@@ -14,13 +14,13 @@ html, body {
   }
 
   #container{
-    width: 90vw;
-    height: calc(90vh - 50px); /* Deja espacio para los controles */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 100vw;
+    height: 100vh; /* Deja espacio para los controles */
+    display: grid;
     margin: 20px 50px;
-    border: 1px solid black;
+    border: 1px solid black; 
+    grid-template-columns: repeat(23,1fr);
+    grid-template-rows: repeat(23,1fr);
   }
 
   .cuadro {
@@ -29,6 +29,7 @@ html, body {
     background-color: #fdfdfd;
     border: 1px solid black;
     transition: background-color;
+   
   }
 
 
